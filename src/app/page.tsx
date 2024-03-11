@@ -11,8 +11,7 @@ const Title = styled.h1`
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div>hello</div>
-      <Title>World</Title>
+      <Title>hello world</Title>
     </main>
   );
 }
