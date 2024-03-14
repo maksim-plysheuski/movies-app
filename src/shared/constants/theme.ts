@@ -6,8 +6,7 @@ export const darkTheme = {
   cardBgColor100: '#BDBDBD',
 };
 
-export type Themes = typeof darkTheme;
-
+type Themes = typeof darkTheme;
 export const lightTheme: Themes = {
   accentColor: '#9e3fcb',
   bgColor: '#e6d0f9',
@@ -15,3 +14,5 @@ export const lightTheme: Themes = {
   cardBgColor300: '#725caa',
   cardBgColor100: '#9f93c0',
 };
+
+export type Theme = { theme: Themes };
