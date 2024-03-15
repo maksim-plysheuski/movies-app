@@ -23,8 +23,9 @@ export default function Home() {
     <ThemeProvider theme={darkTheme}>
       <main>
         <Title>Main Page</Title>
-        <Button variant={'secondary'}>Hello world</Button>
+        <Button variant={'primary'}>Hello world</Button>
       </main>
+      <GlobalStyles />
     </ThemeProvider>
   );
 }

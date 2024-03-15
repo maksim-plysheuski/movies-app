@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes } from 'react';
+import type { ButtonHTMLAttributes, PropsWithChildren } from 'react';
 import React from 'react';
 import { StyledButton } from './styled';
 
@@ -9,7 +9,11 @@ type Props = {
   variant?: Variant;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = ({ children, variant = 'primary', ...props }: Props) => {
+const Button = ({
+  children,
+  variant = 'primary',
+  ...props
+}: PropsWithChildren<Props>) => {
   return (
     <StyledButton $variant={variant} {...props}>
       {children}
