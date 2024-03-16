@@ -1,9 +1,8 @@
 'use client';
 
-import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme } from '@/shared/constants/theme';
-import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import Button from '@/shared/ui/Button/Button';
+import { Link } from '@/shared/ui/Link/Link';
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -11,21 +10,13 @@ const Title = styled.h1`
   color: #bf4f74;
 `;
 
-const GlobalStyles = createGlobalStyle`
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-`;
 export default function Home() {
   return (
-    <ThemeProvider theme={darkTheme}>
-      <main>
-        <Title>Main Page</Title>
-        <Button variant={'primary'}>Hello world</Button>
-      </main>
-      <GlobalStyles />
-    </ThemeProvider>
+    <main>
+      <Title>Main Page</Title>
+      <Button variant={'primary'}>Hello world</Button>
+      <Link path={'/film'}>Link1</Link>
+      <Link path={'/'}>Link2</Link>
+    </main>
   );
 }
