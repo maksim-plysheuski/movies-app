@@ -1,6 +1,6 @@
 import React, { type ReactNode } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { darkTheme } from '@/shared/constants/theme';
+import { darkTheme, lightTheme } from '@/shared/constants/theme';
 
 type Props = { children: ReactNode };
 

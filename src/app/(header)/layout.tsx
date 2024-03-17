@@ -1,9 +1,10 @@
 import { PropsWithChildren, ReactNode } from 'react';
+import { Header } from '@/entities/Header/Header';
 
 export default function HeaderLayout({ children }: PropsWithChildren<ReactNode>) {
   return (
     <div>
-      <h1>Header</h1>
+      <Header />
       {children}
     </div>
   );

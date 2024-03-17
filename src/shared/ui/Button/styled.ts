@@ -5,7 +5,7 @@ import { Theme } from '@/shared/constants/theme';
 export const StyledButton = styled.button<Theme & { $variant?: Variant }>`
   font-size: 24px;
   font-weight: 300;
-  width: 250px;
+  width: 200px;
   height: 55px;
   border: none;
   padding: 10px;
