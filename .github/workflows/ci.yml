@@ -19,6 +19,6 @@ jobs:
         with:
           node-version: 20.x.x
           cache: npm
-      - run: yarn ci
-      - run: yarn run lint
-      - run: yarn run lint:types
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run lint:types
