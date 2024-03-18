@@ -4,10 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   compiler: {
     styledComponents: true,
-    removeConsole: {
-      exclude: ['error'],
-    },
-  }
+  },
 };
 
-export default nextConfig
+export default nextConfig;
